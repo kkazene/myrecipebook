@@ -1,4 +1,7 @@
-Recipes = new Mongo.Collection('Recipes');
+import { Mongo } from 'meteor/mongo';
+import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+
+export const Recipes = new Mongo.Collection('Recipes');
 
 Recipes.schema = new SimpleSchema({
   name: {type: String},
@@ -8,4 +11,4 @@ Recipes.schema = new SimpleSchema({
   time: {type: String},
 });
 
-Recipes.attachSchema(schema);
+//Recipes.attachSchema(schema);

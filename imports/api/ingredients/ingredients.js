@@ -1,4 +1,7 @@
-Ingredients = new Mongo.Collection('Ingredients');
+import { Mongo } from 'meteor/mongo';
+import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+
+export const Ingredients = new Mongo.Collection('Ingredients');
 
 Ingredients.schema = new SimpleSchema({
   name: {type: String},
@@ -6,4 +9,5 @@ Ingredients.schema = new SimpleSchema({
   kcal: {type: Number},
 });
 
-Ingredients.attachSchema(schema);
+
+//Ingredients.attachSchema(schema);
