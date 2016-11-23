@@ -1,1 +1,2 @@
-import '../imports/ui/layouts/body.js';
+import '../imports/startup/client/router.js';
+import { Recipes } from '../imports/api/recipes/recipes.js';

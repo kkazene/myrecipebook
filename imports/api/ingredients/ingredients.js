@@ -5,7 +5,7 @@ export const Ingredients = new Mongo.Collection('Ingredients');
 
 Ingredients.schema = new SimpleSchema({
   name: {type: String},
-  amount: {type: Number},
+  amount: {type: Number, defaultValue: 0},
   kcal: {type: Number},
 });
 
